@@ -156,7 +156,7 @@ console.log 로 찍고 copy object 사용했더니 key 에 "" 붙어있는 걸�
 // # 1 마치 인스턴스 변수처럼
 console.log(person01.name);
 // # 2 Java 에서의 Map 자료형과 같은 방식이라는 점에서
-console.log(person01["name"])
+console.log(person01["name"]);
 
 // 와 같은 방식으로 출력 가능
 
