@@ -1,18 +1,15 @@
-// 컴퓨터 관련 오브젝트
 let computer = {
   score: 0,
   percent2: 0.5,
   percent3: 0.33
 };
 
-// 사용자 관련 오브젝트
 let user = {
   score: 0,
   percent2: 0.5,
   percent3: 0.33
 };
 
-// 게임 관련 오브젝트
 let game = {
   isComputerTurn: true,
   shootLeft: 15
@@ -71,7 +68,6 @@ function updateAI(){
   }
 }
 
-// 여기에 시나리오 관련한 함수 작성 예정
 function updateAI(){
 
 }
@@ -79,11 +75,11 @@ function updateAI(){
 function onComputerShoot() {
 if(!(game.isComputerTurn)) return;
 
-  updateAI();   // 왜 호출하는 위치가 여기여야만 할까
+  updateAI();
 
 let shootType = Math.random() < 0.5 ? 2 : 3;
 
-  if (Math.random() < computer['percent' + shootType]) {  // 결과값은 'percent2' 이거나 'percent3' 가 되므로 computer['percent2'] / computer['percent3'] 의 value 가 산출됨
+  if (Math.random() < computer['percent' + shootType]) {
     showText('컴퓨터가 ' + shootType + '점 슛을 성공했습니다!🙄');
     updateComScore(shootType);
   } else {
