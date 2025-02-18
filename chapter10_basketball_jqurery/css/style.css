@@ -10,13 +10,13 @@
   border: 2px solid #fff;
 }
 
-.div-shots-left {
-  margin-top: 10px;
+.div-shoots-left {
+  margin-top: 5px;
 }
 
-#shots-left {
+#shoots-left {
   background-color: #000;
-  padding: 4px 4px 2px;
+  padding: 1px 4px;
 }
 
 .div-score { 

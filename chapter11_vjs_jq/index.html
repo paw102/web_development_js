@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanilla Js vs. JQ</title>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <button class="btn">Click Me😀</button>
+
+  <script>
+    // $ 사용
+    // $('.btn').text('JQuery 입니다.');   //<button> 태그 내부 text 교체
+
+    // querySelector
+    document.querySelector('.btn').innerHTML = 'Vanilla Js 입니다.';
+
+    // $ / js 를 번갈아주면서 주석처리 한 다음에 어떻게 바뀌는 지 확인하면 되고 여기서의 수업 중심점은 단순 비교 뿐만 아니라 // querySelector 에서 사용하는 함수 및 속성들을 배우는 것임.
+
+  </script>
+</body>
+</html>
